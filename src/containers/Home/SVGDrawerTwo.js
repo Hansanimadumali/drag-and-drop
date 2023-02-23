@@ -8,7 +8,7 @@ class SVGDrawerTwo {
   
   static draw(nodes) {
     // console.log("drawer called")
-    // console.log("transfered nodes from second svg",nodes)
+    
     d3.select("#container-one")
       .selectAll(".node1")
       .data(nodes, (d) => d.id)
