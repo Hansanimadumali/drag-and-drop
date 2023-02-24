@@ -3,6 +3,7 @@ import { products } from './api/products';
 import ContainerTwo from './containers/Home/ContainerTwo';
 import { useEffect, useState } from 'react';
 import ContainerOne from './containers/Home/ContainerOne';
+import ContainerOneSVG from './containers/Home/ContainerOneSVG';
 
 const  App = ()=> {
  
@@ -22,6 +23,7 @@ const  App = ()=> {
   return (
     <div className="App">
       <div className="main-container">
+        <ContainerOneSVG nodes={nodesFromDes}  data={products} updateNodes={updateNodes} />
         <ContainerOne nodes={nodesFromDes}  data={products} updateNodes={updateNodes} />
         <ContainerTwo nodes={nodes} updateNodesFromDes={updateNodesFromDes}  />
       </div>
